@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { satisfies } from "semver";
 
 const initialState = {
     origin: null,
@@ -8,9 +7,9 @@ const initialState = {
 };
 
 export const navSlice = createSlice({
-    name: 'nav',
+    name: "nav",
     initialState,
-    reducer: {
+    reducers: {
         setOrigin: (state, action) => {
             //dispatching the action
             state.origin = action.payload;
