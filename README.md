@@ -23,4 +23,4 @@
 1. Marker, MapViewDirections from RNMaps 지도 상 이동경로 및 현재, 목적지 위치 표시
 2. distancesmatrix(googleapi) 사용하여 이동거리, 이동예상시간 표시
 
-   - 위를 기반으로 예상요금 계산
+   + 위를 기반으로 예상요금 계산
