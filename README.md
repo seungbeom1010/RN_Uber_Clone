@@ -12,7 +12,7 @@
 1. GooglePlacesAutocomplete를 통한 지역 검색기능
 2. KeyboardAvoidingView를 통해 앱 사용시 검색창이 해당 내용을 가리는 현상 방지
 3. NativeStackNavigator
-
+***
 ### MapScreen
 <p align="center">
   <img width="20%" height="30%" src="https://user-images.githubusercontent.com/93919347/149136578-537305d7-5d8c-4c64-8099-6e2da0995921.png">
