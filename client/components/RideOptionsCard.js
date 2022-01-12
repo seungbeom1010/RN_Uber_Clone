@@ -28,7 +28,7 @@ const data = [
     },
 ]
 
-const SURGE_CHARGE_RATE = 1.5;
+const SURGE_CHARGE_RATE = 1.9;
 
 const RideOptionsCard = () => {
     const navigation = useNavigation();
@@ -73,9 +73,9 @@ const RideOptionsCard = () => {
 
                             {new Intl.NumberFormat('en-gb', {
                                 style: 'currency',
-                                currency: 'GBP'
+                                currency: 'krw'
                             }).format(
-                                (travelTimeInformation?.duration?.value * SURGE_CHARGE_RATE * multiplier) / 100
+                                (travelTimeInformation?.distance?.value * SURGE_CHARGE_RATE * multiplier) 
                             )}
 
                         </Text>
