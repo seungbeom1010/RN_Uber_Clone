@@ -12,6 +12,7 @@ import { useNavigation } from '@react-navigation/native';
 const MapScreen = () => {
     const Stack = createNativeStackNavigator();
     const navigation = useNavigation();
+    
     return (
         <View>
             <TouchableOpacity 

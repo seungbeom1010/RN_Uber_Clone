@@ -1,8 +1,5 @@
-//rnfes
-// SafeAreaView - fit in the mobile screen
-// tailwind CSS
 import React from 'react'
-import { StyleSheet, View, SafeAreaView, Image } from 'react-native'
+import { View, SafeAreaView, Image, Text } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
 import NavOptions from '../components/NavOptions';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
@@ -14,7 +11,7 @@ import NavFavorites from '../components/NavFavorites';
 
 const HomeScreen = () => {
     const dispatch = useDispatch();
-
+    // reducer 모듈 액션 실행 
     return (
         <SafeAreaView style={tw`bg-white h-full`}>
             <View style={tw`p-5`}>
@@ -25,18 +22,17 @@ const HomeScreen = () => {
                         resizeMode: 'contain'
                     }}
                     source={{
-                        // uri: uniform resource idenfier
                         uri: "https://links.papareact.com/gzs"
                     }}
                 />
                 <GooglePlacesAutocomplete 
-                    placeholder="Where From?"
+                    placeholder="현재 위치를 입력해주세요."
                     styles={{
                         container: {
                             flex: 0,
                         },
                         textInput: {
-                            fontSize: 18,
+                            fontSize: 20,
                         }
                     }}
                     onPress={(data, details = null) => {
@@ -54,7 +50,7 @@ const HomeScreen = () => {
                     minLength={2}
                     query={{
                         key: GOOGLE_MAPS_APIKEY,
-                        language: 'en'
+                        language: 'kor'
                     }}
                     nearbyPlacesAPI='GooglePlacesSearch'
                     debounce={400}
@@ -67,9 +63,3 @@ const HomeScreen = () => {
 }
 
 export default HomeScreen
-
-const styles = StyleSheet.create({
-    text: {
-        color: "blue",
-    }
-})

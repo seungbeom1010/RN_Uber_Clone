@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
 import { useDispatch, useSelector } from "react-redux";
 import MapView, { Marker } from 'react-native-maps';

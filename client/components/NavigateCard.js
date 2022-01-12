@@ -18,7 +18,7 @@ const NavigateCard = () => {
             <View style={tw`border-t border-gray-200 flex-shrink`}>
                 <View>
                     <GooglePlacesAutocomplete 
-                    placeholder="Where to?"
+                    placeholder="목적지를 입력해주세요."
                     styles={toInputBoxStyles}
                     fetchDetails={true}
                     returnKeyType={"search"}
@@ -36,7 +36,7 @@ const NavigateCard = () => {
                     debounce={400}
                     query={{
                         key: GOOGLE_MAPS_APIKEY,
-                        language:"en",
+                        language:"kor",
                     }}
                     />
                 </View>
